@@ -1,0 +1,529 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+/* Edited by Simon Martin */
+body {
+	margin: 0;
+	padding: 0;
+	background: #3D5D68 url(images/img01.jpg) repeat-x;
+	color: #333;
+	font-size: 13px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-size: 1.82em;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -1px;
+	color: #514F42;
+    border-bottom: solid 2px #514F42;
+}
+
+p, ol, ul { line-height: 1.67em; }
+a{ color: #690; }
+a:hover { text-decoration: none; }
+hr { display: none; }
+blockquote{font-style:italic; background: url(images/quote_open.gif) no-repeat 5px 0; border-left: solid 3px #669900; color:#666; }
+blockquote p{padding-left:40px;}
+blockquote ul{padding-left:60px;} 
+img{border:none;}
+.rssButton, .xoxo a{margin:0 3px;}
+.clear {clear:both;}
+.bold{font-weight:bold;}
+
+#header {
+	width: 940px;
+	height: 270px;
+	margin: 0px auto;
+}
+
+#logo {
+	float: left;
+	padding: 40px 0 0 0;
+}
+
+#logo .sitename {
+	margin: 0;
+	height: 160px;
+	padding: 40px 0 0 170px;
+	background: url(images/img04.jpg) no-repeat left top;
+	text-transform: lowercase;
+	letter-spacing: -2px;
+	font-size: 4em;
+	font-weight: normal;
+	color: #FFF;
+}
+
+#logo .sitename a {
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+}
+
+#logo .strapline {
+	margin: -100px 0 0 173px;
+	text-transform: uppercase;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color:#FFF;
+}
+
+#logo a {
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+#menu {	float: right;}
+#menu ul {
+	margin: 0px;
+	padding: 176px 0 0 0;
+	list-style: none;
+}
+#menu li {	display: inline; }
+#menu a {
+	display: block;
+	float: left;
+	margin-left: 5px;
+	padding: 5px 20px;
+	background: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-top: 2px solid #EBEAD1;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: bold;
+	font-size: 11px;
+	color: #182C33;
+}
+
+#menu a:hover, .active a, #menu a.current {
+    color: #690;
+    border-top: 3px solid #690;
+}
+
+/* Page */
+#wrapper { background: #EBEAD1 url(images/img02.jpg) repeat-x left bottom; }
+#pagewrapper {
+	width: 940px;
+	margin: 0px auto;
+	padding: 0;
+}
+
+/* Content */
+#content {
+	float: left;
+	width: 650px;
+	margin-bottom: 50px;
+}
+
+/* Post */
+.post, .widget, #archive, #page, #contact, #comment-form, #relatedPosts, #comments {
+	/*margin-top: 20px;*/
+    background: url("images/bgr-box-trans.png") repeat-x scroll left top #FFFFFE;
+    padding: 20px 10px 10px;
+    border:solid 1px #DEDBD1;
+    margin-bottom:20px;
+}
+/* This is needed to get rid of the double padding for Add Comment */
+#comment-form, #comments{padding-top:0;}
+
+.post .date {
+	float: left;
+	width: 76px;
+	height: 58px;
+	margin: 0;
+	margin-right: 20px;
+	padding-top: 2px;
+	background: #514F42;
+	line-height: normal;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.post .date b {
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-top: -5px;
+	font-size: 40px;
+}
+
+.postDate{float:right; padding-right:10px; font-size:12px;}
+
+.post .taggedlink {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+.post h1{
+	padding: 0 0 .2em;
+	margin: 0; 
+    border-bottom:none;
+}
+
+.post h1 a{color: #514F42; text-decoration:none;}
+.post h1 a:hover{text-decoration:underline;}
+
+.post .postTitle {
+    height: 60px;
+    padding-bottom:10px;
+    border-bottom: 2px solid #514f42;
+    margin-bottom:10px;
+}
+
+.post .entry {
+	margin: 0;
+	padding: 0 0 20px 0;
+	border-bottom: 1px dashed #663;
+}
+
+.tags, .categories, .postMeta{font-size: .9em;}
+.postMeta{border-top: 1px dotted #ccc; padding-top:5px; margin-top:10px;}
+.adminLinks {float:right;}
+
+#postPaging{margin-top:.5em;}
+#relatedPosts div {padding: 0;}
+#relatedPosts p {
+    margin-top: 0; 
+    border-bottom: 2px solid #514f42; 
+    font: normal 1.82em Arial, Helvetica, sans-serif;
+	letter-spacing: -1px;
+	color: #514F42;
+}
+#relatedPosts a, #relatedPosts span {font-size:13px; border:none;}
+#relatedPosts a { display:block; margin-top: 5px; }
+#relatedPosts span {display: block;}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 260px;
+	margin-bottom: 20px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li { margin-bottom: .2em; }
+#sidebar li ul { border-top: 1px dashed #663; }
+
+#sidebar li li {
+	margin: 0;
+	padding: .2em 0;
+}
+
+#sidebar h4 {
+	padding: 5px;
+	margin: 0 0 16px 0;
+	border-bottom: dashed 1px #663;
+	font-size: 1.67em;
+    background-color: #514f42;
+    color:#fffff9;
+}
+
+#sidebar a { text-decoration: none; }
+#sidebar a:hover { text-decoration: underline;} 
+
+/* Calendar */
+#calendarContainer {
+    width:100%;
+	text-transform: capitalize;
+	margin: 0 auto;
+}
+
+#calendarContainer .calendar {
+    width:100%;
+	margin: 0 auto;
+	border: 1px solid #E8E8E8;
+}
+.calendar table{ 
+    border-collapse:separate !important; 
+    border-spacing:2px;
+}
+.calendar th{
+    font-weight:bold; 
+    background: #514F42; 
+    color:#EBEAD1;
+    border:solid 1px #514F42; 
+}
+.calendar tbody td {
+	border: 1px solid #514F42;
+	text-align: center;
+	background: white;
+}
+.calendar .weekend { background-color: #ccc; }
+.calendar .other { color: #3F6800; }
+.calendar a{  font-weight:bold; }
+.calendar a:visited {color:#4A6F00;}
+.calendar a.exist {
+	display: block;
+	font-weight: bold;
+	background-color: #ccc;
+}
+
+/* Archive */
+#archive h2{ margin:1.82em 0 .5em 0;}
+#archive ul {
+	list-style-type: square;
+	margin: 0 10px;
+	padding: 10px;
+}
+
+#archive ul li { margin-right: 20px; }
+#archive table{
+	width: 100%;	
+	border-collapse: collapse;
+}
+
+#archive table td, #archive table th{ text-align:left; }
+#archive table td{
+	text-align:left;
+	border-bottom: 1px solid #D8D8D8;
+	padding: 2px;
+}
+
+#archive .date{ width: 70px; }
+#archive .comments{
+	width: 70px;
+	text-align: center;
+}
+
+#archive .rating{
+	width: 70px;
+	text-align: center;
+}
+
+
+/* Footer */
+#wrapper2 { background: #422C21; }
+#footer {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #FFFFFF;
+}
+
+#footer a {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 11px;
+	color: #FFF;
+}
+
+#footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer li {
+	display: block;
+	float: left;
+	width: 300px;
+	padding-left: 20px;
+}
+
+#footer li.first { padding-left: 0; }
+#footer li ul {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+#footer li li {
+	display: list-item;
+	float: none;
+	margin: 0;
+	padding: 2px 0;
+	border-bottom: 1px solid #573D30;
+}
+
+#footer h2 {
+	margin-top: 0;
+	color: #FFF;
+}
+
+#legal {
+	clear: both;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #525252;
+	background: black;
+}
+
+#legal a {
+	border-bottom: 1px dotted #939393;
+	text-decoration: none;
+	color: #939393;
+}
+
+#PostPager .PagerLinkCurrent {background-color:#514F42; }
+
+/*----------------------------
+				Contact page
+----------------------------*/
+
+#contact fieldset{
+    border:none;
+    padding:0;
+}
+
+#contact dd, .commentForm dd{ margin:0; }
+
+#contact label, .commentForm label{
+	display: block;
+	padding-top: 5px;
+	font-weight:700;	
+	margin-bottom:5px;
+}
+
+#contact input:not([class='sendbutton']), #contact textarea, .commentForm input:not([class='sendbutton']), .commentForm textarea, .commentForm select {
+	width: 20em;
+	margin-bottom:5px;
+	border: solid 1px #514F42;
+	color:#514F42;
+	font-size:1.3em;
+	padding:.3em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.commentForm select { width: 21em;}
+.sendbutton{
+    margin: 15px 0;
+    padding: 3px 5px;
+}
+
+/*----------------------------
+					Comments
+----------------------------*/
+
+#commentlist, #trackbacks{ padding-left:20px; font-family:Georgia,Helvetica,Arial; font-size:18px;}
+#commentlist ol, #trackbacks ol {margin:0; padding:0;}
+
+.comment {
+	margin-bottom: 10px;
+	border: solid 1px #AFAC99;
+    padding: 12px 12px 0;
+    background: url("images/bgr-box-trans.png") repeat-x scroll left top #FFFFFE;
+}
+
+.comment .author{margin:0; padding: 3px 0; text-align:left;}
+p. author{clear:both; font-size:.8em;}
+.comment .gravatar {
+    clear: both;
+    float: left;
+    margin:0  10px 0 0;
+}
+.comment .comment-content, .comment .date, .comment a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+.comment .comment-content, .comment .date {
+    margin: 0 0 0 70px;    
+    margin-left:70px;
+}
+.comment-replies .comment_header .visitor .fn{margin-left:75px;}
+.comment-replies{background:transparent url(../../pics/reply-arrow.gif) no-repeat 2px 15px;padding:0 0 0 15px;margin:5px 0 0}
+.comment .date { margin-top:10px; }
+.self {border: 2px solid #514F42;}
+
+.comment cite{
+	font-family: Monospace;
+	font-style: normal;
+}
+
+.comment img.flag {
+	position: relative;
+	top: 2px;
+}
+
+.commentForm #addcomment, #comment, #trackbackheader{border-bottom: solid 2px #514F42;}
+#comment {margin-bottom: 20px;}
+
+.commentForm textarea {
+	width: 610px;
+	height: 150px;
+	border:1px solid #514F42;
+}
+
+#commentMenu{
+	padding: 0;
+	margin:0;
+	clear:both;
+}
+
+#commentMenu li{
+	float:left;
+	margin:0;
+	list-style:none;
+	margin-right:5px;
+	padding: 3px 8px;	
+	cursor:pointer;
+	position:relative;
+	top: 2px;
+	background:#514F42;
+	color:#DFDFDF;
+}
+
+#commentMenu li.selected{
+	background:#fff;
+	border: solid 1px #514F42;
+	border-bottom:none;
+	color:#514F42;
+	font-weight:bold;
+}
+
+#commentPreview{
+	display:none;
+	clear:both;
+	min-height: 150px;
+}
+
+#commentPreview li{list-style:none;}
+#commentPreview .top{margin-top:1px;}
+
+.success {
+	color: green;
+	font-weight: bold;
+}
+
+.commentForm .bbcode {
+    font-size:.7em;
+    float:right;
+    position:relative;
+    top:20px;
+}
+
+.bbcode a {
+    margin: 1px 0 0 .2em;
+    padding: 1px .4em;
+    background:#514F42;
+    color:#fff;
+    font-weight:bold;
+}
+
+.searchresult{ margin-top:1em;}
+
+.recommendedreading{padding:0; margin:0;}
+.recommendedreading dt{clear:both; font-family: Arial, Helvetica, sans-serif; font-weight:bold; letter-spacing: -1px;}
+.recommendedreading dd {padding:0; margin:0;}
+.recommendedreading .bookcover{padding:0 10px 1em 0; margin-top:1.67em; float:left; clear:none;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.syntaxhighlighter  { overflow-y: hidden !important; }
+}

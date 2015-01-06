@@ -1,0 +1,98 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="site" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server" profile="http://gmpg.org/xfn/11">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!--[if lt IE 9]>
+	<script src="/themes/yoko/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon"/>
+    
+        <script type="text/javascript">
+
+        	function opacity(id, opacStart, opacEnd, millisec) {
+        		//speed for each frame
+        		var speed = Math.round(millisec / 100);
+        		var timer = 0;
+
+        		//determine the direction for the blending, if start and end are the same nothing happens
+        		if (opacStart > opacEnd) {
+        			for (i = opacStart; i >= opacEnd; i--) {
+        				setTimeout("changeOpac(" + i + ",'" + id + "')", (timer * speed));
+        				timer++;
+        			}
+        			setTimeout("slideInfoObject.height='0px';slideInfoObject.visibility='hidden';", (timer++ * speed));
+
+        		} else if (opacStart < opacEnd) {
+
+        			slideInfoObject.height = "50px";
+        			slideInfoObject.visibility = "visible";
+        			for (i = opacStart; i <= opacEnd; i++) {
+        				setTimeout("changeOpac(" + i + ",'" + id + "')", (timer * speed));
+        				timer++;
+        			}
+        			setTimeout("opacity('" + id + "', 70, 0, " + millisec + ");", 3000);
+        		}
+        	}
+
+        	//change the opacity for different browsers
+        	function changeOpac(opacity, id) {
+        		//var object = document.getElementById(id).style;
+        		slideInfoObject.opacity = (opacity / 100);
+        		slideInfoObject.MozOpacity = (opacity / 100);
+        		slideInfoObject.KhtmlOpacity = (opacity / 100);
+        		slideInfoObject.filter = "alpha(opacity=" + opacity + ")";
+        	}
+    
+    </script>
+</head>
+<body class="home blog">
+<div id="page" class="clearfix">
+<form id="Form1" runat="Server">
+<header id="branding">
+<nav class="clearfix" id="mainnav">
+	<div class="menu-page-menu-container">
+		<ul class="menu" id="menu-page-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx"><%=Resources.labels.contact %></a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%=Utils.AbsoluteWebRoot %>archive.aspx"><%=Resources.labels.archive %></a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a runat="server" id="aLogin" /></li>
+		</ul>
+	</div>
+</nav>
+<hgroup id="site-title">
+<h1 id="logo"><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=BlogSettings.Instance.Name %></a></h1>
+   <h2><%=BlogSettings.Instance.Description %></h2>
+</hgroup>
+
+<div id="headerphoto" >
+<img width="1102" height="350" alt="" class="headerimage" src="/themes/yoko/images/logoBriscolone.jpg">
+</div>
+
+</header>
+<div id="wrap">
+<div id="main">  
+    <div id="content">
+      <blog:SearchOnSearch runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+      <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+      
+    </div>
+</div> <!--div main-->
+    <div role="complementary" class="widget-area" id="tertiary">
+		<blog:WidgetZone runat="server" ID="rightzone" />
+    </div>
+    
+  
+  </div>
+  <footer class="clearfix" id="colophon">
+		<p>Powered by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a>
+		<span class="sep"> | </span> Theme: Yoko by <a href="http://www.elmastudio.de/wordpress-themes/">Elmastudio</a>, adapted by <a href="http://www.onesoft.dk/">onesoft</a></p>
+		<a class="top" href="#page">Top</a>
+	</footer>
+</form>
+</div>
+</body>
+</html>

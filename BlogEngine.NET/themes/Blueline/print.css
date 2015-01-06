@@ -1,0 +1,59 @@
+﻿
+/*-------------------------------------------------------------------------------*/ 
+/*---- body - Viser hvordan siden skal sættes op ved udskrift --*/ 	
+body          	
+{
+	font-family: Georgia, 'Times New Roman', palatino; 
+	font-size: 10pt;
+	text-align: left;
+	padding: 0pt;
+	color: #000000; 
+}
+/*---- p - Viser hvordan elementer sat i <p> (paragraph) skal sættes op ved udskrift --*/
+p
+{
+    font-family: Georgia, 'Times New Roman', palatino; 
+	font-size: 10pt; 
+	color: #000000; 
+}
+/*Indholdet af siden skal printes og bredden er sat så den passer med et stykke A¤*/
+#indhold
+{
+	width: 600px;
+}
+/*---- h1 - Viser hvordan elementer sat i <h1> (headline 1) skal sættes op ved udskrift --*/ 
+h1 
+{
+	font-size: 16px;
+	font-family: Tahoma;
+	color: #333333;
+	padding-left: 10px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+/*---- h2 - Viser hvordan elementer sat i <h1> (headline 2) skal sættes op ved udskrift --*/ 
+h2 
+{
+	font-size: 14px;
+	font-family: Tahoma;
+	color: #333333;
+	padding-bottom:5px;
+}
+/*---- h3 - Viser hvordan elementer sat i <h3> (headline 3) skal sættes op ved udskrift --*/ 	
+h3           	
+{ 	
+	font-family: Tahoma, arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #000000; 
+	font-weight: bold;
+}
+/*De elementer som ikke skal printes*/
+#top			{	display:none;	}
+#sidemenu		{	display:none;	}
+#commentlist	{	display:none;	}
+#comment-form	{	display:none;	}
+#footer			{	display:none;	}
+.postfooter		{	display:none;	}
+.ratingcontainer{	display:none;	}
+.description	{	display:none;	}
+#postnavigation	{	display:none;	}

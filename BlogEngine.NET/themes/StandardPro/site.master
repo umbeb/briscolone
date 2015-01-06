@@ -1,0 +1,65 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="StandardSite" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+
+<%@ Register src="~/themes/StandardPro/UserControl/PageMenu.ascx" tagname="MenuControl" tagprefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head runat="server" profile="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
+</head>
+<body class="BEWallStandardPro">
+
+  <div id="header">
+    <h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></h1>
+    <h2><%=BlogSettings.Instance.Description %></h2>
+  </div>
+  
+  <form runat="Server" class="body">
+    
+  <div> 
+      <div class="container4">
+          <div class="menu4">
+              <uc3:MenuControl ID="MenuControl1" runat="server"  ShowArchive="true" ShowContact="true" ShowHome="true" ShowPages="true"  />
+                  
+                  <div class="login">
+         <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
+          </div>
+              
+    </div>
+      </div>
+    </div>
+    
+    <div id="content">
+    <blog:WidgetZone runat="server" Id="be_Top_SPro_WIDGET_ZONE"  ZoneName="be_Top_SPro_WIDGET_ZONE" />
+      <blog:SearchOnSearch runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+      <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+      
+        <div id="front-popular" class="clearfloat">
+            <div id="recentpost" class="clearfloat">
+                    <blog:WidgetZone ID="SPro_footerleftzone" ZoneName="SPro_footerleftzone" runat="server" />
+            </div>
+            <div id="mostcommented" class="clearfloat">
+                <blog:WidgetZone ID="SPro_footermiddlezone" ZoneName="SPro_footermiddlezone" runat="server" />
+            </div>
+            <div id="recent_comments" class="clearfloat">
+                    <blog:WidgetZone ID="SPro_footerrightzone" ZoneName="SPro_footerrightzone" runat="server" />
+            </div>
+        </div>
+
+      <p id="footer">
+        Powered by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a> <%=BlogSettings.Instance.Version() %> Theme StandardPro by <a href="http://www.blogenginewall.com">BlogEngineWall</a>
+
+      </p>
+    </div>
+
+    <div id="sidepanel">
+      <blog:WidgetZone runat="server" ZoneName="be_SPro_WIDGET_ZONE" />
+    </div>
+    
+  </form>
+  
+</body>
+</html>
+
