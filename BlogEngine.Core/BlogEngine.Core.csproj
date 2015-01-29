@@ -68,13 +68,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxMin">
-      <HintPath>..\..\lib\ajaxminify\AjaxMin.dll</HintPath>
+      <HintPath>bin\Release\AjaxMin.dll</HintPath>
     </Reference>
     <Reference Include="BlogML">
-      <HintPath>..\..\lib\blogml\BlogML.dll</HintPath>
+      <HintPath>bin\Release\BlogML.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\..\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>bin\Release\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
