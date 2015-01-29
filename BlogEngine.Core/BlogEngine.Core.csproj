@@ -346,6 +346,9 @@
   <ItemGroup>
     <Compile Include="Web\HttpHandlers\JavaScriptHandler.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(SolutionDir)..\lib\watin\Interop.SHDocVw.dll" "$(SolutionDir)BlogEngine.Tests\Bin\Debug\" /F /R /Y /I
