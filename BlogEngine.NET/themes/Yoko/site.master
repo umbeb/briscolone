@@ -57,7 +57,8 @@
 <nav class="clearfix" id="mainnav">
 	<div class="menu-page-menu-container">
 		<ul class="menu" id="menu-page-menu">
-			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx"><%=Resources.labels.contact %></a></li>
+		    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.flickr.com/photos/130871922@N07/sets/">Foto</a></li>	
+            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx"><%=Resources.labels.contact %></a></li>
 			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%=Utils.AbsoluteWebRoot %>archive.aspx"><%=Resources.labels.archive %></a></li>
 			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a runat="server" id="aLogin" /></li>
 		</ul>
