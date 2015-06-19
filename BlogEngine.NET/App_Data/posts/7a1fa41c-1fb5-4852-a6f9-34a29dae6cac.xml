@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<post>
+  <author>Admin</author>
+  <title>Prova Secondo post</title>
+  <description />
+  <content>&lt;p&gt;Testo Post!!!&amp;nbsp;&lt;/p&gt;</content>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <iscommentsenabled>True</iscommentsenabled>
+  <pubDate>2015-06-19 14:26:00</pubDate>
+  <lastModified>2015-06-19 14:26:23</lastModified>
+  <raters>0</raters>
+  <rating>0</rating>
+  <slug>Prova-Secondo-post</slug>
+  <tags />
+  <comments>
+    <comment id="0cc95b4b-933b-46dc-8fe4-bc550c15ef89" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2015-06-19 14:26:45</date>
+      <author>Admin</author>
+      <email>post@example.com</email>
+      <country />
+      <ip>::1</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>Questo &amp;#232; un commento di prova</content>
+    </comment>
+    <comment id="8430983c-180e-4804-93dc-423158b61e67" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2015-06-19 14:26:52</date>
+      <author>Admin</author>
+      <email>post@example.com</email>
+      <country />
+      <ip>::1</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>Questo &amp;#232; un&amp;#39;altro commento</content>
+    </comment>
+  </comments>
+  <categories />
+  <notifications />
+</post>

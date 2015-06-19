@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Net;
     using System.Text;
 
     /// <summary>
@@ -111,6 +112,7 @@
                     Categories = GetCategories(x.Categories),
                     Tags = GetTags(x.Tags),
                     Comments = GetComments(x.Comments, x.RelativeLink),
+                    //CommentsList= x.Comments,
                     IsPublished = x.IsPublished,
                     CanUserEdit = x.CanUserEdit,
                     CanUserDelete = x.CanUserDelete
@@ -226,7 +228,63 @@
                 return aLink + sLink;
             }
         }
-        
+
+        public static List<JsonComment> GetCommentsList(int numComments)
+        {
+
+            Post lastPost = (from post in Post.Posts
+                           orderby post.DateCreated descending
+                           select post
+                           ).FirstOrDefault();
+
+                                     
+            JsonComment jComm;
+            List<JsonComment> lstComment = new List<JsonComment>();
+            List<Comment> lstCommentBase = null;
+            if (numComments > 0)
+            {
+                lstCommentBase = lastPost.AllComments.Take(numComments).ToList();
+            }
+            else
+            {
+                lstCommentBase = lastPost.AllComments;
+            }
+            foreach (var item in lstCommentBase)
+            {
+                jComm = new JsonComment();
+                jComm.Author = item.Author;
+                jComm.Content = WebUtility.HtmlDecode( item.Content).ToString().Substring(0,15);
+                jComm.Date = item.DateCreated.ToString("dd/MM/yyyy") ;
+                jComm.Email = item.Email;
+                jComm.Id = item.Id;
+                jComm.IdPost = lastPost.Id;
+                lstComment.Add(jComm);
+            }
+
+            return lstComment;
+        }
+
+        public static JsonComment GetComment(string idPost, string idComment)
+        {
+
+            Post currentPost = Post.Posts.Where (p=> p.Id.Equals(new Guid(idPost))).FirstOrDefault();
+            Comment comment = (from comm in currentPost.AllComments
+                               where comm.Id.ToString()==idComment
+                               select comm).FirstOrDefault();
+
+
+            JsonComment jComm = new JsonComment();
+            jComm.Author = comment.Author;
+            jComm.Content = WebUtility.HtmlDecode(comment.Content).ToString();
+            jComm.Date = comment.DateCreated.ToString("dd/MM/yyyy");
+            jComm.Email = comment.Email;
+            jComm.Id = comment.Id;
+            jComm.IdPost = currentPost.Id;
+
+            return jComm;
+
+            
+        }
         #endregion
 
     }

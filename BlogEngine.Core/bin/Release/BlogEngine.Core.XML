@@ -4066,6 +4066,7 @@
             Wrapper aroung Post
             used to show post list in the admin
             </summary>
+            
         </member>
         <member name="P:BlogEngine.Core.Json.JsonPost.Id">
             <summary>
@@ -4076,6 +4077,7 @@
             <summary>
             Post title
             </summary>
+            
         </member>
         <member name="P:BlogEngine.Core.Json.JsonPost.Author">
             <summary>
@@ -11281,6 +11283,7 @@
             <summary>
             Gets DateModified.
             </summary>
+            
         </member>
         <member name="T:BlogEngine.Core.Web.Controls.BlogBasePage">
             <summary>

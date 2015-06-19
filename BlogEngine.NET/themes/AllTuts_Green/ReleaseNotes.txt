@@ -1,4 +1,0 @@
-RELEASE NOTES
-This theme is a "green" modification of well-known "All Tuts" theme.
-
-V2.6.0.5: Initial release of theme for Blogengine.NET V2.6.0.5

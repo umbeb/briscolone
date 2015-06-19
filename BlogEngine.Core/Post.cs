@@ -339,6 +339,7 @@
             }
         }
 
+
         /// <summary>
         ///     Gets or sets the Author or the post.
         /// </summary>

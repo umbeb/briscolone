@@ -4,11 +4,12 @@
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Xml.Serialization;
-
+    using System.Runtime.Serialization;
     /// <summary>
     /// Represents a comment to a blog post.
     /// </summary>
     [Serializable]
+    
     public sealed class Comment : IComparable<Comment>, IPublishable
     {
         #region Constants and Fields
@@ -316,6 +317,7 @@
         /// <summary>
         /// Gets DateModified.
         /// </summary>
+        /// 
         DateTime IPublishable.DateModified
         {
             get

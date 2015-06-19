@@ -13,7 +13,7 @@
   <showdescriptioninpostlist>False</showdescriptioninpostlist>
   <commentsperpage>10</commentsperpage>
   <feedauthor />
-  <description>Short description of the blog</description>
+  <description>Sito del Briscolone!</description>
   <iscommentnestingenabled>True</iscommentnestingenabled>
   <enablepingbacksend>True</enablepingbacksend>
   <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
@@ -63,7 +63,7 @@
   <blogrollvisibleposts>3</blogrollvisibleposts>
   <geocodinglatitude>0</geocodinglatitude>
   <numberofreferrerdays>1</numberofreferrerdays>
-  <israzortheme>True</israzortheme>
+  <israzortheme>False</israzortheme>
   <thumbnailserviceapi>http://www.robothumb.com/src/?url={0}</thumbnailserviceapi>
   <iscommentsenabled>True</iscommentsenabled>
   <searchdefaulttext>Enter search term or APML url</searchdefaulttext>
@@ -77,7 +77,7 @@
   <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>
   <timezone>0</timezone>
   <enableoptimization>False</enableoptimization>
-  <name>Name of the blog</name>
+  <name>Briscolone Club</name>
   <moderationtype>Auto</moderationtype>
   <enablepingbackreceive>True</enablepingbackreceive>
   <showlivepreview>True</showlivepreview>
